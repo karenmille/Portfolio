@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Contact </title>
+	<meta charset="utf-8">
+  <meta name="description" content="Portfolio">
+  <meta name="keywords" content="HTML,CSS,JavaScript">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.min.css">
+  <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.structure.min.css">
+  <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.theme.min">
+  <link href='https://fonts.googleapis.com/css?family=Rajdhani|Pacifico' rel='stylesheet' type='text/css'/> 
+  <style>
+		body{
+			background-image:url('assets/aboutme_background.jpg');
+			background-repeat:no-repeat;
+			background-attachment:fixed;
+			background-position:center; 
+			background-size: 100%;
+		}
+		@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+		
+		.home {
+			
+			font-family: "Lato", sans-serif;
+			
+		}
+		.title{
+			margin: 0 auto;
+			width: 50%;
+			text-align: center;
+			padding-bottom: 10px;
+			font-family: Rajdhani;
+			font-size: 32px;
+			color: #2E4B62;
+		}
+				
+	</style>	
+</head>
+<body>
+ <!-- Header -->	
+ <header class="page-header">
+	 <div id="top-menu">
+		 <div class="container">
+			 <p id="time"></p>
+		 	<p id="vistor"></p>
+		 </div>
+	 </div>
+	<div class="container">
+<!-- Site Navigation-->
+<nav>
+	<!-- Site Logo-->
+	<div class="logo"><a href="index.html"><img src="images/logo.png" alt="" width="150" height="40"/></a></div>
+	<!--End Site Logo-->
+	
+</nav>
+<!-- End Site Navigation-->
+	</div>
+</header>
+<!-- End Header -->	
+
+<!-- Site Main Area-->
+
+<main>
+	<div class="page-top">
+		<div class="container">
+			<h1 class="title"> CONTACT ME TODAY!</h1>
+		</div>
+	</div>
+	
+	<div class="container">
+		<section class="content">
+		
+		<legend class="title">Please fill the form and I will get Back to you</legend>
+			<p>Date: <input type="text" value="may/03/2018" id="datepicker" class="datepicker"></p>
+			
+			<form action="http://ss1.ciwcertified.com/cgi-bin/process.pl"  onsubmit="return validateForm(this);">
+				<p>
+					First Name<input type="text" name="fname" id="fname" onblur="validatefName();">
+				</p>
+				<p>
+					Last Name<input type="text" name="lname" id="lname" onblur="validatelName();">
+				</p>
+				<p>
+					Email<input type="email" name="email" id="email" onblur="validateEmail();">
+				</p>
+				
+				<p>Comment
+					<textarea name="comment" id="comment" onKeyDown="textAmount(this.form.comment,this.form.countdown,500);" 
+							onKeyUp="textAmount(this.form.comment,this.form.countdown,500);" onblur="validateComment(); ">
+					</textarea><br>
+					<span class="commentChar">(Max characters: 500), 
+					You have <input readonly type="text" name="countdown" size="3" value="500" id="countdown"> characters left.</span>
+				</p>
+				<p>
+					Password<input type="text" name="pass" id="pass" onkeyup="validatePassword(this.value);">
+					<span id="passwordStrength"></span>
+				</p>
+			
+				<p>
+					<input type="submit" value="Submit" onsubmit = "validateForm()">
+					
+				</p>
+			</form>
+		
+		</section>
+		
+		
+		<aside>
+			<div class="widget">
+				<p>Email: Karen.miller.programmer@gmail.com</p>
+				<p>Tel: (954)-895-9870</p>
+				<ul class="social">
+					<li><a href="https://www.linkedin.com/in/karen-miller-7b678b152/" target="_blank"><img src="images/icons/in.png" alt="linkedin" class="fb"></a></li>
+					<li><a href="https://github.com/karenmille" target="_blank"><img src="images/icons/git.png" alt="github" class="tw"></a></li>
+					
+				</ul>
+			</div>
+		</aside>
+	</div>
+</main>
+<!-- End Site Main Area-->
+
+<!-- Site Footer-->
+<footer>
+	<div class="container">
+		<p class="copyright">&copy; 2018 Karen Moreno</p>
+	</div>
+</footer>
+<!-- End Site Footer-->
+<script src="js/script.js"></script>
+<script src="js/contact.js"></script>
+<script src="js/jquery-ui-1.12.1/external/jquery/jquery.js"></script>
+<script src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.2.0/zxcvbn.js"></script>
+<script>
+$( function() {
+  $( "#datepicker" ).datepicker();
+} );
+</script>
+</body>
+</html>

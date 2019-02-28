@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>MY Page</title>
+	<meta charset="utf-8">
+  	<meta name="description" content="Portfolio">
+  	<meta name="keywords" content="HTML,CSS,JavaScript">
+ 	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" href="css/styleapi.css" type="text/css">
+	<meta name="viewport" content="width=device-width,minimal-ui">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  
+      
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+</head>
+<body>
+	
+ <!-- Header -->	
+ 	<header class="page-header">
+	 	<div id="top-menu">
+		 	<div class="container">
+			 	<p id="time"></p>
+		 		<p id="vistor"></p>
+		 	</div>
+	 	</div>
+		<div class="container">
+		<!-- Site Navigation-->
+			<nav>
+			<!-- Site Logo-->
+				<div class="logo"><a href="index.html"><img src="images/logo.png" alt="" width="150" height="40"/></a></div>
+			<!--End Site Logo-->
+			
+			</nav>
+	<!-- End Site Navigation-->
+		</div>
+	</header>
+<!-- End Header -->	
+
+<!-- Site Main Area-->
+<div class="stage" style="background-image: url(https://farm7.staticflickr.com/6180/6181662411_57b095c03a_b.jpg)">
+	<time class="js_time" datetime="2014-04-17T20:15:00+01:00">
+	  <span class="time js_time">20:15</span>
+	  <span class="date js_date">May 3 2018</span>
+	</time>
+	<ul class="boxwrap">
+	  <li class="box weather js_weather">
+		<div class="icon icon-sunrise weather-condition js_weather-condition"></div>
+		<div class="temperature js_temperature">- °C</div>
+		<div class="city js_weather-city"></div>
+	  </li>
+	  <li class="box map js_map-canvas"></li>
+	  <li class="box quote js_quote loaded">
+		<blockquote id="qod-quote">
+		  ... loading ...
+		</blockquote>
+	  </li>
+	</ul>  
+  </div>
+	<script src='https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true&libraries=places'></script>
+  <script src='https://quotesondesign.com/api/3.0/api-3.0.js'></script>
+  
+	
+  
+	  <script  src="js/index.js"></script>
+  
+<!-- End Site Main Area-->
+
+<!-- Site Footer-->
+<footer>
+	<div class="container">
+		<p class="copyright">&copy; 2018 Karen Moreno</p>
+	</div>
+</footer>
+<!-- End Site Footer-->
+<script src="js/script.js"></script>-->
+</body>
+</html>
